@@ -22,7 +22,7 @@ const HomePage = () => {
   useEffect(() => {
     const fetchArticles = async () => {
       try {
-        const response = await axios.get("http://127.0.0.1:8000/api/articles");
+        const response = await axios.get("https://data-lime.vercel.app/articles");
         const filteredCards = response.data.filter(article => article.id <= 6); // Filter by id
         setProducts(filteredCards);
        
@@ -36,22 +36,7 @@ const HomePage = () => {
     fetchArticles();
   }, []);
   
-  // const handleSearch = async () => {
-  //   try {
-  //     // Create the query parameters
-  //     const params = new URLSearchParams();
-  //     if (city) params.append('city', city);
-  //     if (category) params.append('category', category);
-      
-  //     // Send the request to the API with the query parameters
-  //     const response = await axios.get(`http://127.0.0.1:8000/api/articles?${params.toString()}`);
-      
-  //     // Update the state with the filtered results
-  //     setResults(response.data);
-  //   } catch (error) {
-  //     console.error("Error fetching results:", error);
-  //   }
-  // };
+
   const handleSearch = () => {
     const params = new URLSearchParams();
     if (city) params.append('city', city);

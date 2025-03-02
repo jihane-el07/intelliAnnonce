@@ -18,10 +18,10 @@ export default function Details() {
   useEffect(() => {
     const fetchArticle = async () => {
       try {
-        const response = await axios.get(`http://127.0.0.1:8000/api/articles/${id}`);
+        const response = await axios.get(`https://data-lime.vercel.app/articles/${id}`);
         setArticle(response.data);
 
-        const relatedResponse = await axios.get( "http://127.0.0.1:8000/api/articles");
+        const relatedResponse = await axios.get( "https://data-lime.vercel.app/articles");
         const filteredCards = relatedResponse.data.filter(article => article.id <= 3); // Filter by id
         setCards(filteredCards);
       } catch (error) {

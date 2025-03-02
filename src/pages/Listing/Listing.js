@@ -15,7 +15,7 @@ export default function Listing() {
   useEffect(() => {
     const fetchArticles = async () => {
       try {
-        const response = await axios.get("http://127.0.0.1:8000/api/articles");
+        const response = await axios.get("https://data-lime.vercel.app/articles");
         const filteredCards = response.data.filter((article) => article.id <= 12);
         setCards(filteredCards);
       } catch (error) {
