@@ -1,0 +1,175 @@
+#imgcont {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.imge {
+    width: 80%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+#divup {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+#formulaire {
+    width: 40%;
+    height: 600px;
+    background-color: #fff;
+    box-shadow: rgba(100, 100, 111, 0.404) 0px 7px 29px 0px;
+    position: absolute;
+    top: 250%;
+    left: 50%;
+    border-radius: 20px;
+    transform: translateY(-50%); /* Center vertically */
+}
+
+#hh2 {
+    color: #020053;
+    font-family: Abhaya Libre SemiBold;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 2%;
+}
+
+#inputs {
+    padding: 10px 20px 0px 20px;
+}
+
+#forget {
+    margin-left: 35%;
+}
+
+#or {
+    width: 90%;
+    margin: 5% 0% 0% 5%;
+}
+
+#alinks {
+    width: 90%;
+    height: 40px;
+    margin-bottom: 5px;
+    text-decoration: none;
+    color: #4A429A;
+    font-family: Abhaya Libre SemiBold;
+    border-radius: 5px;
+    margin: 5% 6% 5% 6%;
+    cursor: pointer;
+    text-align: center;
+}
+
+#sign {
+    position: absolute;
+    top: 89.5%;
+    left: 47%;
+}
+/* @media (max-width: 1280px){
+    .imge {
+        width: 80%;
+        height: 100vh;
+    }
+    #formulaire {
+        width: 40%;
+        left: 75%;
+        top: 45%;
+        transform: translateX(-50%); 
+        height: 500px;
+    }
+
+    #inputs input {
+        width: 100%;
+        padding: 10px;
+    }
+    #or{
+        margin-top: 0%;
+    }
+    #alinks {
+        padding: 5px 40px;
+        text-align: center;
+    }
+    #hh2{
+        margin-top: 5%;
+    }
+    #bb{
+        margin-top: -9%;
+    }
+    #sign {
+        top: 93%;
+        left: 43%;
+    }
+
+    #forget {
+        margin-left: 30%;
+    }
+} */
+
+/* Mobile devices (up to 768px) */
+@media (max-width: 768px) {
+    #formulaire {
+        width: 80%;
+        height: 450px;
+        top: 40%;
+        left: 10%;
+    }
+
+    #hh2 {
+        font-size: 20px;
+        margin-top: 20%;
+    }
+
+    #inputs input {
+        width: 100%;
+        padding: 12px;
+    }
+
+    #forget {
+        margin-left: 20%;
+    }
+
+    #alinks {
+        padding: 5px 20px;
+    }
+
+    #sign {
+        top: 92%;
+        left: 35%;
+    }
+}
+
+/* Small screens (up to 480px) */
+@media (max-width: 480px) {
+    #formulaire {
+        width: 90%;
+        height: 400px;
+        top: 30%;
+        left: 5%;
+    }
+
+    #hh2 {
+        font-size: 18px;
+        margin-top: 25%;
+    }
+
+    #inputs input {
+        width: 100%;
+        padding: 12px;
+    }
+
+    #alinks {
+        padding: 5px 15px;
+    }
+
+    #forget {
+        margin-left: 15%;
+    }
+
+    #sign {
+        top: 90%;
+        left: 25%;
+    }
+}

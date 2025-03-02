@@ -1,0 +1,95 @@
+.navbar {
+  display: flex;
+  /* overflow: hidden; */
+  justify-content: space-around;
+  font-family: Abhaya Libre SemiBold;
+  align-items: center;
+  padding: 15px 5%;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.navbar ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  margin: 0 30px;
+}
+
+
+.navbar .menu-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+#b11{
+  width:80%;
+  padding: 10px;
+  border-radius: 25px;
+  background-color: #E31616;
+  color: #F8E8DA;
+  margin-right: 100px;
+  text-align: center;
+  font-family: Abhaya Libre SemiBold;
+  border: none;
+  font-size: larger;
+}
+/* Add this to your existing Nav.css */
+.nav-item .position-relative {
+position: relative;
+}
+        /* 
+        .favorite-badge {
+          position: absolute;
+          top: -8px;
+          right: -8px;
+          background: #ff4757;
+          color: white;
+          border-radius: 50%;
+          width: 20px;
+          height: 20px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 12px;
+          pointer-events: none;
+        } */
+/* Responsive Design */
+@media (max-width: 100px) {
+  .navbar ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+  }
+
+  .navbar ul.active {
+    display: flex;
+  }
+
+  .navbar ul li {
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .navbar .menu-toggle {
+    display: block;
+  }
+}
+
+@media screen and (max-width:1280px){
+  .navbar ul li {
+    text-align: center;
+    margin-left: 0px;
+  }
+}

@@ -1,0 +1,26 @@
+#divupp{
+    position: absolute;
+    top: 0%;
+    height: 100vh;
+    width: 100%;
+}
+.e{
+    margin-left:20%
+}
+#lg{
+    position: absolute;
+    right: 0%;
+    width: 15%;
+}
+
+#formulaires{
+    width: 40%;
+    height: 400px;
+    background-color: #FFF3F3;
+    box-shadow: rgba(100, 100, 111, 0.404) 0px 7px 29px 0px;
+    position: absolute;
+    right: 55%;
+    top: 50%;
+    border-radius: 20px;
+    transform: translateY(-50%);
+}

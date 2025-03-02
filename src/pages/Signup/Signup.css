@@ -1,0 +1,151 @@
+/* Container */
+
+/* Form */
+/* #signup-form {
+    width: 30%;
+    background: #fff3f3;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: rgba(100, 100, 111, 0.404) 0px 7px 29px 0px;
+    text-align: center;
+} */
+
+/* Title */
+
+
+/* Form Fields */
+
+label {
+    color: #020053;
+    font-family: "Abhaya Libre SemiBold";
+    text-align: left;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #020053;
+    border-radius: 5px;
+}
+
+/* Terms */
+.terms {
+    
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    color: #fa5252;
+    margin-left: 5%;
+    display: flex;
+}
+
+.terms label{
+    color: #fa5252;
+}
+
+.terms input {
+    accent-color: #fa5252;
+}
+
+/* Signup Button */
+.signup-btn {
+    width: 30%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #fa5252;
+    color: #fff;
+    font-family: "Abhaya Libre SemiBold";
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 3%;
+}
+
+.signup-btn:hover {
+    background-color: #e04444;
+}
+#orr{
+    width: 90%;
+    margin: 0% 0% 0% 5%;
+}
+/* OR Divider */
+/* .or-divider {
+    margin: 15px 0;
+    color: #666;
+} */
+
+/* Google Button */
+.google-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #020053;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #4a429a;
+    font-family: "Abhaya Libre SemiBold";
+}
+
+.google-btn img {
+    width: 20px;
+}
+
+/* Login Link */
+.login-text {
+    margin: -4% 0% 0% 5%;
+    color: #020053;
+}
+
+.login-text a {
+    color: #fa5252;
+}
+/* Responsive Design */
+/* @media (max-width: 1280px) {
+    #signup-form {
+        width: 40%;
+    }
+    .input{
+        margin-top: -7%;
+    }
+    #orr{
+        margin-top: 0%;
+        margin-bottom: 2%;
+    }
+    #ss{
+        margin-top: -5%;
+    }
+    #formulaire{
+        height: 520px;
+        margin-top: -2%;
+    }
+} */
+
+@media (max-width: 768px) {
+    #signup-form {
+        width: 80%;
+        padding: 20px;
+    }
+
+    #signup-title {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    #signup-form {
+        width: 90%;
+    }
+
+    #signup-title {
+        font-size: 20px;
+    }
+
+    .google-btn {
+        padding: 8px;
+    }
+} 

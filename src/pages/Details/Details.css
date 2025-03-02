@@ -1,0 +1,240 @@
+
+
+#imgs{
+    
+    height: 550px;
+    width: 100%;
+}
+ #float{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-size: cover;
+  } 
+ 
+
+#lis{
+    color:#F8E8DA;
+    font-size: 5rem;
+    font-family: Abhaya Libre SemiBold;
+    font-weight: bold;
+}
+.aa{
+    text-decoration: none;
+    font-family: Abhaya Libre SemiBold;
+    color: #020053;
+    font-size: 2rem;
+    margin-left: 6px;
+}
+.aa:hover{
+    color: #020053;
+}
+.title{
+    text-align:justify;
+    position: relative;
+    margin-top: 7%;
+    margin-left: 4%;
+}
+
+
+.contai{
+    width: 50%;
+    background-color: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 25px;
+    /* height: 1700px; */
+    height: 1200px;
+    margin-top: 5%;
+    margin-left: 3%;
+}
+#caskP{
+    width: 100%;
+    margin-top: 0%;
+    height: 400px;
+    border-radius: 25px 25px 0px 0px;
+}
+
+/* .scrollI{
+    display: flex;
+    max-width: 92%;
+    margin-top: 10%;
+    overflow: hidden;
+    overflow-x: auto;
+      
+}
+.scrollI::-webkit-scrollbar{
+    width: 0;
+    
+} */
+#span{
+    margin-left: 60%;
+}
+.text{
+    color: #020053;
+    font-weight: bold;
+    
+   }
+#descriptionn{
+    font-family: Abhaya Libre SemiBold;
+    font-weight: bold;
+    color: #020053;
+    padding: 5%;
+    font-size: 20px;
+
+}
+#price{
+    padding: 6%;
+    margin-top: -12%;
+}
+#divside{
+    background-color: #FF4367;
+    width: 10px;
+    height: 60px;
+    border-radius: 0px 15px 15px 0px;
+    margin-top: 5%;
+}
+#Featuress{ 
+    margin-top: -6%;
+    margin-left: 5%;
+    font-family: Abhaya Libre SemiBold;
+    font-weight: bold;
+}
+#Descriptionn{
+    margin-top: -6%;
+    margin-left: 5%;
+    font-family: Abhaya Libre SemiBold;
+    font-weight: bold;
+}
+#lorem{
+    font-family: Abhaya Libre SemiBold;
+    font-weight: bold;
+    margin: 0% 4% 4% 4%;
+    color: #574E4E;
+}
+
+#owner{
+    width: 35%;
+    background-color: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 25px;
+    height: 350px;
+    position: absolute;
+    top: 105%;
+    left: 62%;
+}
+#AdOwner{
+    margin-top: -8%;
+    margin-left: 5%;
+    font-family: Abhaya Libre SemiBold;
+    font-weight: bold;
+}
+#photo{
+    display: flex;
+    padding: 0px 0px 0px 10%;
+}
+#location{
+    display: flex;
+    margin-left: 35%;
+}
+
+#contact{
+    width: 35%;
+    background-color: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 25px;
+    height: 400px;
+    position: absolute;
+    top: 175%;
+    left: 62%;
+}
+#action{
+    width: 35%;
+    background-color: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 25px;
+    height: 200px;
+    position: absolute;
+    top: 247%;
+    left: 62%;
+}
+#AdAction{
+    margin-top: -8%;
+    margin-left: 5%;
+    font-family: Abhaya Libre SemiBold;
+    font-weight: bold;
+}
+
+#review{
+    width: 35%;
+    background-color: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 25px;
+    height: 370px;
+    position: absolute;
+    top: 287%;
+    left: 62%;
+}
+#Review{
+    margin-top: -8%;
+    margin-left: 5%;
+    font-family: Abhaya Libre SemiBold;
+    font-weight: bold;
+    color:#020053 ;
+}
+
+#photoRev{
+    display: flex;
+    padding: 0px 0px 0px 3%;
+    margin-top: 0%;
+}
+#stars2{
+    margin-top: 0%;
+    margin-left: 50%;
+}
+
+
+#related{
+    width: 95%;
+    background-color: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 25px;
+    height: max-content;
+    margin: 0% 3% 20% 3%
+}
+#Related{
+    margin-top: -3%;
+    margin-left: 2%;
+    font-family: Abhaya Libre SemiBold;
+    font-weight: bold;
+    color:#020053 ; 
+}
+#divsidee{
+    background-color: #FF4367;
+    width: 10px;
+    height: 60px;
+    border-radius: 0px 15px 15px 0px;
+    margin-top: 10%;
+    
+}
+
+#content-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: -95%;
+}
+#review, #owner, #contact{
+    position: relative; 
+    width: 35%;
+    margin-top: 20px;
+}
+#hr{
+    width: 90%;
+    height: 2px;
+    background-color: #2b2a2a;
+    border: none;
+    margin-top: 2%;
+    margin-left: 5%;
+}

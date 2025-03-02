@@ -1,0 +1,77 @@
+
+.cards-container{
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 2rem; 
+    justify-content: center; 
+    align-items: stretch; 
+    padding: 1rem;
+    margin-top: 3%;
+}
+#imgs{
+    
+    height: 550px;
+    width: 100%;
+}
+ #float{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-size: cover;
+  } 
+ 
+
+#lis{
+    color:#F8E8DA;
+    font-size: 5rem;
+    font-family: Abhaya Libre SemiBold;
+    font-weight: bold;
+}
+.aa{
+    text-decoration: none;
+    font-family: Abhaya Libre SemiBold;
+    color: #020053;
+    font-size: 2rem;
+    margin-left: 6px;
+}
+.aa:hover{
+    color: #020053;
+}
+.title{
+    text-align:justify;
+    position: relative;
+    margin-top: 7%;
+    margin-left: 4%;
+}
+
+#offerR{
+    width: 100%;
+    height: 550px;
+    margin-top: 5%;
+    /* position: absolute;
+    top: 230%;*/
+} 
+
+.cards-wrapper {
+    display: flex;
+    flex-direction: row;
+    margin-top: 4%;
+    
+}
+#side{
+    display: flex;
+    flex-direction: column;
+    
+}
+.navSide {
+    width: 20%; /* Keep sidebar fixed width */
+    min-width: 250px; /* Ensures it's not too small on smaller screens */
+    background-color: #727bbca2;
+    border-radius: 0px 20px 20px 0px;
+    padding: 1% 0% 0% 0%;
+    
+}
+
+
+
+

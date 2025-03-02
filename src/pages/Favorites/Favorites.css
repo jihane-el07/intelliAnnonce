@@ -1,0 +1,12 @@
+#Nimg{
+    width: 100%;
+}
+.favorites-grid {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 50px;
+    justify-content: space-evenly;
+}
+.fav{
+    width: 100%;
+}

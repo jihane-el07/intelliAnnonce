@@ -1,0 +1,80 @@
+.cards-container{
+    display: flex; /* Enables flex layout */
+    flex-wrap: wrap; /* Allows cards to wrap to the next row on smaller screens */
+    gap: 2rem; /* Space between cards */
+    justify-content: center; /* Centers cards horizontally */
+    align-items: stretch; /* Ensures cards have equal height */
+    padding: 1rem;
+}
+
+.cardd{
+    display: grid;
+    width: 100%;
+    background-color: #fff;
+    max-width: 18rem;
+    height: 400px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 3%;
+    position: relative; /* Needed for absolute positioning of icons */
+    overflow: hidden; /* Prevents content overflow */
+   
+  }
+  .cardd:hover{
+    transform: scale(1.05) ;
+  }
+  
+  .cardd > * {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+  .cardBody {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1; 
+    margin-top: 20%;
+  
+}
+
+.img {
+    width: 100%;
+    height: 200px;
+    border-radius: 3% 3% 0% 0%; 
+}
+
+
+ #h55{
+    color: #020053;
+    padding: 0% 4% 0% 4%;
+    font-family: Abhaya Libre SemiBold;
+    font-weight: bold;
+    font-size: 22px;
+    margin-top: 83%;
+}
+.location{
+    position: absolute;
+    top:79%;
+    padding: 0% 0% 5% 5%;
+}
+#prix{
+    color: red;
+    padding: 0% 0% 5% 5%;
+    font-size: 20px;
+    position: absolute;
+    top: 88%;
+}
+.date{
+    color: #BBB3B3;
+    padding: 0% 0% 5% 5%;
+    position: absolute;
+    top: 85%;
+    margin-left: 60%;
+}
+
+
+
+.pos{
+    position: relative;
+    top: 0%;
+} 

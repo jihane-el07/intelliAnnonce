@@ -1,0 +1,268 @@
+#float{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-size: cover;
+  /* background: linear-gradient(rgba(32, 51, 102, 0.5), rgba(112, 117, 163, 0.1)) */
+}
+.hero-container {
+  padding: 40px 20px;
+  /* margin: 20px auto; */
+  margin-left:25%;
+  width: 800px;
+  font-family: Abhaya Libre SemiBold;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  color: #020053;
+  font-weight: 600;
+  margin-bottom: 25px;
+  letter-spacing: 1.5px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+#wel{
+  font-weight: bolder;
+  font-size: 4rem;
+  color: #ffffff;
+}
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: #020053;
+  line-height: 1.6;
+  font-weight: bolder;
+  max-width: 600px;
+}
+#p::placeholder{
+  color: #E31616;
+}
+#search{
+  margin-top: 5%;
+}
+#searchbar{
+  background-color: #e31616aa;
+  width: 55%;
+  height: 100px;
+  margin-left: 20%;
+  margin-top: 2%;
+  border-radius:20px;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+  .scroll{
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 5%;
+    border-radius: 200px;
+    overflow-x: auto;
+  }
+  .scroll::-webkit-scrollbar{
+    width: 0;
+  }
+  #dcont{
+    margin-top: 8%;
+    height: max-content;
+  }
+  #dcont1{
+    margin-top: 8%;
+    height: max-content;
+    background-color: #E31616;
+    width: 100%;
+  }
+#cat{
+  box-shadow: rgba(119, 119, 130, 0.447) 0px 7px 29px 0px;
+  width: 100%;
+  margin-top: 5%;
+  padding: 2%;
+ 
+}
+.containerr{
+  box-shadow: rgba(119, 119, 130, 0.447) 0px 7px 29px 0px;
+  width: 100%;
+  margin-top: 5%;
+  padding: 2%;
+ 
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px; 
+  margin-top: 20px;
+  height: 900px;
+  padding: 0 5%;
+}
+
+.card {
+  position: relative;
+  border-radius: 15px;
+  width: 85%;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(41, 39, 39, 0.1);
+  /* padding: 10px; */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#h5{
+  color: #020053;
+  padding: 9% 5% 0% 5%;
+  font-family: Abhaya Libre SemiBold;
+  font-weight: bold;
+  text-align: left;
+}
+#map{
+    position: absolute;
+    top:76%;
+    padding: 0% 0% 5% 5%;
+}
+#h4{
+  color: red;
+  padding: 0% 0% 5% 5%;
+  font-size: 20px;
+  position: absolute;
+  top: 88%;
+}
+
+#img{
+  width:100%;
+  height:55%;
+  border-radius: 3% 3% 0% 0%;
+}
+#pos{
+    position: relative;
+    top: 0%;
+}
+.slider {
+  display: flex;
+  overflow: hidden;
+  height: 500px;
+  align-items: center; /* Centers cards */
+  padding: 20px 0;
+}
+
+.slider-track {
+  display: flex;
+  gap:30px; /* Adds spacing between cards */
+  width: max-content;
+  animation: slide 50s linear infinite;
+}
+
+.slider .c{
+  width: 300px; /* Adjust based on required size */
+  min-width: 400px; /* Ensures consistent size */
+  height: 500px; /* Match Recently Published Ads */
+  flex-shrink: 0;
+}
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);  
+  }
+}
+.hero-heading {
+  color: #020053;
+  font-family: "Abhaya Libre SemiBold";
+  margin-left: 5%;
+  text-align: center;
+  margin-top: 7%;
+  font-size: 3rem;
+}
+
+.feature-section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.feature-item {
+  display: flex;
+  border-radius: 50px;
+  box-shadow: rgba(119, 119, 130, 0.699) 0px 7px 29px 0px;
+  width: 29%;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 5%;
+  padding: 2%;
+}
+
+.feature-title {
+  color: #020053;
+  font-family: "Abhaya Libre SemiBold";
+  font-size: 30px;
+  text-align: left;
+}
+
+.feature-description {
+  color: #000000b3;
+  font-family: "Abhaya Libre SemiBold";
+  font-size: 20px;
+  text-align: left;
+}
+
+.feature-link {
+  color: #000000b3;
+  font-family: "Abhaya Libre SemiBold";
+  margin-left: 50%;
+  font-size: 20px;
+  margin-top: 5%;
+  cursor: pointer;
+}
+
+.join-heading {
+  color: #020053;
+  font-family: "Abhaya Libre SemiBold";
+  margin-left: 5%;
+  text-align: center;
+  margin-top: 7%;
+  font-size: 3rem;
+}
+
+.join-subheading {
+  color: #ff0080;
+  font-family: "Abhaya Libre SemiBold";
+  margin-left: 5%;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.step-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.step-item {
+  border-radius: 50px;
+  box-shadow: rgba(119, 119, 130, 0.699) 0px 7px 29px 0px;
+  width: 30%;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 5%;
+  padding: 2%;
+  height: 230px;
+}
+
+.step-title {
+  color: #020053;
+  font-family: "Abhaya Libre SemiBold";
+  font-size: 30px;
+  width: 100%;
+  text-align: left;
+
+}
+
+.step-description {
+  color: #000000b3;
+  font-family: "Abhaya Libre SemiBold";
+  font-size: 20px;
+  text-align: left;
+  width: 100%;
+}
