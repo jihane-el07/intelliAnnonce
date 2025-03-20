@@ -16,7 +16,7 @@ export default function Categorie() {
         axios.get(`https://data-lime.vercel.app/articles/category/${category}`)
             .then(response => setCards(response.data))
             .catch(error => console.error("Erreur :", error));
-    }, [category]);
+    }, []);
     
     
 
