@@ -42,9 +42,16 @@ export default function Categorie() {
                             </div>
             
                         <div className="cards-container">
-                            {cards.map((card) => (
-                                <Cards key={card.id} Carte={card} />
-                            ))}
+                            {cards.length === 0 ? (
+                                <p>Article not found</p>
+                            ) : (
+                            cards.map((card) => (
+                                <Cards 
+                                key={card.id} 
+                                Carte={card}
+                                />
+                            ))
+                            )}
                         </div>
                        
                             

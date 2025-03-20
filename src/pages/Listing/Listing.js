@@ -58,18 +58,20 @@ export default function Listing() {
           <img src="./images/off.jpg" alt="" id="offerR" />
         </div>
         <div className="cards-container">
-          {cards.map((card) => (
+        {cards.length === 0 ? (
+          <p>Article not found</p>
+        ) : (
+          cards.map((card) => (
             <Cards 
               key={card.id} 
               Carte={card} 
               toggleFavorite={toggleFavorite} 
               isFavorite={favorites.some((fav) => fav.id === card.id)}
             />
-          ))}
+          ))
+        )}
         </div>
-
       </div>
-
       <Footer />
     </div>
   );
