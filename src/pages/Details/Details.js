@@ -19,7 +19,8 @@ export default function Details() {
     const fetchArticle = async () => {
       try {
         const response = await axios.get(`https://data-lime.vercel.app/articles/${id}`);
-        setArticle(response.data);
+        setArticle(response.data.data);
+        console.log(article)
 
         const relatedResponse = await axios.get( "https://data-lime.vercel.app/articles");
         const filteredCards = relatedResponse.data.filter(article => article.id <= 3); // Filter by id
@@ -75,12 +76,12 @@ export default function Details() {
       </div>
       
       <div className="contai">
-        <img src={`/${article.image}`} alt={article.title} id="caskP" />
+        <img src={`${article.image}`} alt={article.title} id="caskP" />
         <div className="text">
           <span id='span' style={{ color: "#929292", fontFamily: "Abhaya Libre SemiBold" }}>
             {article.date}
           </span>
-          <img src={`/${article.viewsI}`} alt="Views" style={{ marginLeft: "2%" }} />
+          <img src={`${article.viewsI}`} alt="Views" style={{ marginLeft: "2%" }} />
           <span  style={{ color: "#929292", fontFamily: "Abhaya Libre SemiBold" }}>
             {article.views}
           </span>

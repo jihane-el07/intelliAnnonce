@@ -14,7 +14,7 @@ export default function Categorie() {
 
     useEffect(() => {
         axios.get(`https://data-lime.vercel.app/articles/category/${category}`)
-            .then(response => setCards(response.data))
+            .then(response => setCards(response.data.data))
             .catch(error => console.error("Erreur :", error));
     }, []);
     
