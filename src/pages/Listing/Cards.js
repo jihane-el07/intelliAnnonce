@@ -35,7 +35,7 @@ export default function Cards({ Carte }) {
                 <p className='date'>{Carte.date}</p>
                 <h4 id='prix'>{Carte.prix} DH</h4>
             </div>
-            <Link to={`/details/${Carte.id}`}></Link>
+            <Link to={`/details/${Carte._id}`}></Link>
         </div>
     );
 }

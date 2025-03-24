@@ -13,10 +13,10 @@ export default function Categorie() {
     const { category } = useParams();
 
     useEffect(() => {
-        axios.get(`https://data-lime.vercel.app/articles/${category}`)
-            .then(response => setCards(response.data))
+        axios.get(`https://data-lime.vercel.app/articles/category/${category}`)
+            .then(response => setCards(response.data.data))
             .catch(error => console.error("Erreur :", error));
-    }, [category]);
+    }, []);
     
     
 
@@ -42,9 +42,16 @@ export default function Categorie() {
                             </div>
             
                         <div className="cards-container">
-                            {cards.map((card) => (
-                                <Cards key={card.id} Carte={card} />
-                            ))}
+                            {cards.length === 0 ? (
+                                <p>Article not found</p>
+                            ) : (
+                            cards.map((card) => (
+                                <Cards 
+                                key={card.id} 
+                                Carte={card}
+                                />
+                            ))
+                            )}
                         </div>
                        
                             
