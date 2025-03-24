@@ -292,7 +292,7 @@ const HomePage = () => {
           {products.map((product) => (
             <div className="card" key={product.id}>
               <img src={product.image} alt={product.title} id="img" />
-              <h5 id='h5'>{product.contenu}</h5>
+              <h5 id='h5'>{product.title}</h5>
               <img src="images/Heart.png" alt="Favorite" width="25px" style={{ position: "absolute", left: '87%', top: '55%' }} />
               <img src="images/MapPinLine.png" alt="Location" width="13%" height="10%" id="map" />
               <span style={{ color: '#929292', position: 'absolute', top: '77%', left: '16%' }}>{product.location}</span>

@@ -22,7 +22,7 @@ export default function Cards({ Carte }) {
         <div className='cardd'>
             <img src={Carte.image} alt={Carte.title} className='img' />
             <div className='crdBody'>
-                <h5 id='h55'>{Carte.contenu}</h5>
+                <h5 id='h55'>{Carte.title}</h5>
                 <img 
             src={isFavorite ? '/pics/heart2.png' : Carte.imageH} 
             alt="Favorite" 
