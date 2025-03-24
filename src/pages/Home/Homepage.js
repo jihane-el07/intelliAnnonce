@@ -22,7 +22,9 @@ const HomePage = () => {
   useEffect(() => {
     const fetchArticles = async () => {
       try {
-        const response = await axios.get("https://data-lime.vercel.app/articles");
+        const response = await axios.get("https://data-lime.vercel.app/articles", {
+          headers: { Authorization: `Bearer YOUR_TOKEN_HERE` }
+      });
         const filteredCards = response.data.filter(article => article.id <= 6); // Filter by id
         setProducts(filteredCards);
        
